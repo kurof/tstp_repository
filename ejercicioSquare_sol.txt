@@ -1,0 +1,18 @@
+#solucion que hice yo para el ejercicio de ls 4 pilares
+
+class Square():
+    def __init__(self,a,s1): 
+        self.s1 = s1
+        self.a = a
+    
+    def change_size(self,a,s1):
+        a = input("Write your square's size: ")
+        a = int(a)
+        s1 = input("Write a number to change size: ")
+        s1 = int(s1)
+    
+        print("New size: ", s1+a,"\nPerimeter: ",(s1+a)*4)
+    
+
+square = Square(0,0)
+square.change_size()
